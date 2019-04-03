@@ -1,0 +1,13 @@
+@import "global";
+
+.chk-box {
+    margin: $default-margin;
+    width: $default-font-size;
+    height: $default-font-size;
+    vertical-align: bottom;
+
+    &.checked::after {
+        width: $default-font-size;
+        height: $default-font-size;
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "jb-react-components-default-theme",
+  "version": "0.1.0",
+  "description": "A theme for the react-components",
+  "scripts": {
+    "dist": "node node_modules/webpack/bin/webpack.js -p"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabbersepp/react-components-default-theme.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabbersepp/react-components-default-theme/issues"
+  },
+  "homepage": "https://github.com/gabbersepp/react-components-default-theme#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}

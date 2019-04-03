@@ -1,0 +1,25 @@
+@import "global";
+
+.btn {
+    margin: $default-margin;
+    border: 1px solid $dark;
+    padding: $min-size;
+    height: $default-font-size + $min-size*2 + 2px;
+    border-radius: 7px;
+    font-weight: bold;
+
+    &.default {
+        &:hover {
+            box-shadow: 0 0 5px $dark;
+        }
+    }
+
+    &.important {
+        background-color: rgba($light2, 0.8);
+        color: white;
+
+        &:hover {
+            background-color: rgba($light2, 1);
+        }
+    }
+}

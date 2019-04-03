@@ -1,0 +1,10 @@
+@import "global";
+
+.message {
+    & > div {
+        height: $default-font-size*2;
+        font-weight: bold;
+        padding: $default-font-size/2 0;
+        color: white;
+    }
+}

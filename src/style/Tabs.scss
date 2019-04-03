@@ -1,0 +1,45 @@
+@import "global";
+
+.tabs {
+    margin: $default-margin;
+
+    .bar {
+        .header {
+            width: $min-size*22; // use two additional pixels for borders
+            border-top-right-radius: 10px;
+            padding: $min-size;
+
+            span:first-child {
+                width: $min-size*22 - 2px - 10px - $min-size*2 - $min-size; //padding, margin of x
+                overflow: hidden;
+                white-space: nowrap;
+                display: block;
+                float: left;
+            }
+
+            span:last-child {
+                width: 10px;
+                display: block;
+                float: right;
+                margin-left: $min-size;
+
+                &:hover {
+                    text-decoration: underline;
+
+                }
+            }
+
+            &:hover {
+                width: auto;
+
+                span:first-child {
+                    width: auto;
+                }
+            }
+
+            &.inactive {
+                background-color: $light;
+            }
+        }
+    }
+}

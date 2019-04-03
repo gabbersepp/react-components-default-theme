@@ -1,0 +1,16 @@
+$min-size: 5px;
+$default-font-size: $min-size*4;
+$default-padding: $min-size;
+$default-margin: $min-size;
+
+// colors
+$dark: #062147;
+$light: #62A2FF;
+$shadow: #31517F;
+$light2: #1575FF;
+$grayed: #31517F;
+
+@font-face { 
+    font-family: "Montserrat"; 
+    src: url("./fonts/Montserrat-Regular.ttf"); 
+}
