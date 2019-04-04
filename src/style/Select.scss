@@ -1,0 +1,16 @@
+@import "global";
+
+.select {
+    margin: $default-margin;
+    width: 200px;
+
+    input {
+        padding: $default-padding/2;
+    }
+
+    .select-results {
+        .select-item {
+            padding: $default-padding;
+        }
+    }
+}

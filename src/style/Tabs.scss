@@ -2,12 +2,22 @@
 
 .tabs {
     margin: $default-margin;
+    width: auto;
 
     .bar {
+        height: 35px;
+
         .header {
             width: $min-size*22; // use two additional pixels for borders
             border-top-right-radius: 10px;
             padding: $min-size;
+
+            &:not(.closeable) {
+                span:first-child {
+                    width: $min-size*22 - 2px - $min-size*2 - $min-size; //padding, margin of x
+                    clear: left;
+                }
+            }
 
             span:first-child {
                 width: $min-size*22 - 2px - 10px - $min-size*2 - $min-size; //padding, margin of x
@@ -17,15 +27,16 @@
                 float: left;
             }
 
-            span:last-child {
-                width: 10px;
-                display: block;
-                float: right;
-                margin-left: $min-size;
-
-                &:hover {
-                    text-decoration: underline;
-
+            &.closeable {
+                span:last-child {
+                    width: 10px;
+                    display: block;
+                    float: right;
+                    margin-left: $min-size;
+    
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
 
@@ -41,5 +52,12 @@
                 background-color: $light;
             }
         }
+    }
+
+    .content {
+        padding: $default-padding;
+        border: 1px solid $dark;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
