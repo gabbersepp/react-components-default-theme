@@ -4,15 +4,16 @@
     margin: $default-margin;
     width: auto;
 
-    .bar {
+    .tabs-bar {
         height: 35px;
 
-        .header {
-            width: $min-size*22; // use two additional pixels for borders
+        .tab-header {
+            min-width: $min-size*22; // use two additional pixels for borders
+            width: $min-size*22;
             border-top-right-radius: 10px;
             padding: $min-size;
 
-            &:not(.closeable) {
+            &:not(.tab-header--closeable) {
                 span:first-child {
                     width: $min-size*22 - 2px - $min-size*2 - $min-size; //padding, margin of x
                     clear: left;
@@ -27,7 +28,7 @@
                 float: left;
             }
 
-            &.closeable {
+            &.tab-header--closeable {
                 span:last-child {
                     width: 10px;
                     display: block;
@@ -48,13 +49,17 @@
                 }
             }
 
-            &.inactive {
+            &.tab-header--inactive {
                 background-color: $light;
+            }
+
+            &.tab-header--disabled {
+                opacity: 0.5;
             }
         }
     }
 
-    .content {
+    .tabs-content {
         padding: $default-padding;
         border: 1px solid $dark;
         border-bottom-left-radius: 10px;

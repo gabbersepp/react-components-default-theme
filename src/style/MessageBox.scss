@@ -6,7 +6,7 @@
     box-shadow: 0 0 10px $dark;
     background-color: white;
 
-    .title {
+    .msg-box-title {
         // align title at the top
         margin-left: -$default-padding*3;
         margin-right: -$default-padding*3;
@@ -16,11 +16,11 @@
         text-align: center;
     }
 
-    .msg {
+    .msg-box-msg {
         text-align: center;
     }
     
-    .buttons {
+    .msg-box-buttons {
         display: flex;
         flex-direction: row;
         justify-content: center;

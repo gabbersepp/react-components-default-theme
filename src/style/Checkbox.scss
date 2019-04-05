@@ -6,7 +6,7 @@
     height: $default-font-size;
     vertical-align: bottom;
 
-    &.checked::after {
+    &.chk-box--checked::after {
         width: $default-font-size;
         height: $default-font-size;
     }

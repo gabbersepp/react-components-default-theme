@@ -8,13 +8,13 @@
     border-radius: 7px;
     font-weight: bold;
 
-    &.default {
+    &.btn--default {
         &:hover {
             box-shadow: 0 0 5px $dark;
         }
     }
 
-    &.important {
+    &.btn--important {
         background-color: rgba($light2, 0.8);
         color: white;
 

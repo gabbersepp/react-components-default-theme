@@ -1,0 +1,15 @@
+@import "global";
+
+.group {
+    margin: $default-margin;
+    border: 1px solid $dark;
+    border-radius: 10px;
+
+    .group-header {
+        font-size: $default-font-size / 1.5;
+        border-bottom: 1px solid $dark;
+        width: calc(100% - 10px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
