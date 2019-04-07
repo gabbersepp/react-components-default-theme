@@ -1,0 +1,6 @@
+@import "global";
+
+input.input {
+    margin: $default-margin;
+    width: calc(100% - 10px);
+}
