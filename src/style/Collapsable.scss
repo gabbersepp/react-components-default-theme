@@ -1,0 +1,44 @@
+@import "global";
+
+.collapsable {
+    margin: $default-margin;
+    
+    .collapsable-header {
+        padding: $default-padding;
+        border-right: 1px solid $dark;
+        border-top: 1px solid $dark;
+        border-left: 1px solid $dark;
+        
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;      
+        
+        &.collapsable-header--collapsed {
+            border-bottom: 1px solid $dark;
+        }
+
+        background-color: rgba($light, 0.0);
+        transition: background-color 0.5s;
+
+        &:hover {
+            background-color: rgba($light, 0.1);
+        }
+    }
+
+    .collapsable-content {
+        padding: $default-padding;
+        border-right: 1px solid $dark;
+        border-bottom: 1px solid $dark;
+        border-left: 1px solid $dark;
+
+        &.collapsable-content--collapsed {
+
+        }
+
+        overflow: hidden;
+        word-break: break-all;
+    }
+
+    &:hover {
+        box-shadow: 0 0 5px $dark;
+    }
+}
