@@ -9,6 +9,10 @@
     }
 
     .select-results {
+        border: 1px solid $dark;
+        border-top: none;
+        z-index: $z-index-middle;
+
         .select-item {
             padding: $default-padding;
         }
