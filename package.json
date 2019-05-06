@@ -1,6 +1,6 @@
 {
   "name": "jb-react-components-default-theme",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A theme for the react-components",
   "scripts": {
     "dist": "node node_modules/webpack/bin/webpack.js -p"
