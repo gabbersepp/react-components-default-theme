@@ -9,17 +9,21 @@
     font-weight: bold;
     text-align: center;
 
+    &.btn--disabled {
+        opacity: 0.5;
+    }
+
     &.btn--default {
-        &:hover {
+        &:not(.btn--disabled):hover {
             box-shadow: 0 0 5px $dark;
         }
     }
-
+    
     &.btn--important {
         background-color: rgba($light2, 0.8);
         color: white;
 
-        &:hover {
+        &:not(.btn--disabled):hover {
             background-color: rgba($light2, 1);
         }
     }
